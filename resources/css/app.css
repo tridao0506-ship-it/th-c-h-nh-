@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --color-gold-50: #fbf8eb;
+    --color-gold-100: #f5eed1;
+    --color-gold-200: #ebdca4;
+    --color-gold-300: #dfc370;
+    --color-gold-400: #d4a943;
+    --color-gold-500: #c69225;
+    --color-gold-600: #aa741c;
+    --color-gold-700: #88551a;
+    --color-gold-800: #71441c;
+    --color-gold-900: #60391c;
+}
+
+/* Custom scrollbar and utilities */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #c69225;
+}
